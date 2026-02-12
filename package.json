@@ -1,0 +1,23 @@
+{
+  "name": "mongoose",
+  "version": "1.0.0",
+  "description": "for learn mongoose module",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "start",
+    "start": "nodemon index.mjs",
+    "dev": "node index.mjs"
+  },
+  "author": "Muthugopi J",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.4",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "mongoose": "^9.2.0",
+    "nodemon": "^3.1.11",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0"
+  }
+}
