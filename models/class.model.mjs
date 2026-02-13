@@ -11,7 +11,7 @@ const memberSchema = new mongoose.Schema(
 
     role: {
       type: String,
-      enum: ["ca", "staff", "student"],
+      enum: ["staff", "student"],
       required: true,
       index: true
     },
@@ -32,7 +32,10 @@ const classSchema = new mongoose.Schema(
       unique: true,  
       trim: true
     },
-
+    CA : {
+      type : mongoose.Schema.Types.ObjectId,
+      required : true
+    },
     members: {
       type: [memberSchema],
       default: []
@@ -47,6 +50,6 @@ const classSchema = new mongoose.Schema(
   {
     timestamps: true
   }
-);
+);  
 
 export const Class = mongoose.model("Class", classSchema);
